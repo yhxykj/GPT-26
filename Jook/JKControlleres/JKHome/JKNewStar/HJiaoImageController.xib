@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner" customClass="HJiaoImageController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="HCH-W8-na7" id="dkg-vl-ctN"/>
+                <outlet property="view" destination="1zg-8q-hzX" id="sKI-pZ-EaH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1zg-8q-hzX">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWe-u7-c2E">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baddRepair" translatesAutoresizingMaskIntoConstraints="NO" id="VOE-0m-SFj">
+                            <rect key="frame" x="16" y="11" width="65" height="22"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mm-WL-zYt">
+                            <rect key="frame" x="317" y="0.0" width="61" height="44"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="itemdataDefault_7Class_j"/>
+                            <connections>
+                                <action selector="memberAction:" destination="ha1-h7-7fH" eventType="touchUpInside" id="zEP-d6-SH5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VOE-0m-SFj" firstAttribute="centerY" secondItem="LWe-u7-c2E" secondAttribute="centerY" id="dcR-4s-qgX"/>
+                        <constraint firstAttribute="height" constant="43.99" id="OVx-1E-PLK"/>
+                        <constraint firstAttribute="bottom" secondItem="0Mm-WL-zYt" secondAttribute="bottom" id="ACy-z7-SJB"/>
+                        <constraint firstItem="VOE-0m-SFj" firstAttribute="leading" secondItem="LWe-u7-c2E" secondAttribute="leading" constant="15.98" id="FCA-UB-UsX"/>
+                        <constraint firstItem="0Mm-WL-zYt" firstAttribute="top" secondItem="LWe-u7-c2E" secondAttribute="top" id="RDz-JY-HSi"/>
+                        <constraint firstAttribute="trailing" secondItem="0Mm-WL-zYt" secondAttribute="trailing" constant="15.02" id="v9n-aW-mYK"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HCH-W8-na7">
+                    <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r9U-ll-DJE">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="ha1-h7-7fH" id="cZ5-6K-jt2"/>
+                        <outlet property="delegate" destination="ha1-h7-7fH" id="sFZ-QX-AYx"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="O10-tE-IS9"/>
+            <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LWe-u7-c2E" firstAttribute="top" secondItem="O10-tE-IS9" secondAttribute="top" id="Izw-9o-LPi"/>
+                <constraint firstItem="HCH-W8-na7" firstAttribute="top" secondItem="LWe-u7-c2E" secondAttribute="bottom" id="kon-cO-bzC"/>
+                <constraint firstItem="HCH-W8-na7" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" id="rRB-ES-DPi"/>
+                <constraint firstItem="O10-tE-IS9" firstAttribute="trailing" secondItem="HCH-W8-na7" secondAttribute="trailing" id="rHC-au-52N"/>
+                <constraint firstItem="O10-tE-IS9" firstAttribute="bottom" secondItem="HCH-W8-na7" secondAttribute="bottom" id="sVj-rZ-Nd2"/>
+                <constraint firstItem="O10-tE-IS9" firstAttribute="trailing" secondItem="LWe-u7-c2E" secondAttribute="trailing" id="bx0-lV-ffo"/>
+                <constraint firstItem="LWe-u7-c2E" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" id="kEm-Xv-C5m"/>
+            </constraints>
+            <point key="canvasLocation" x="119.84732824427481" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="itemdataDefault_7Class_j" width="61" height="30"/>
+        <image name="baddRepair" width="65" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

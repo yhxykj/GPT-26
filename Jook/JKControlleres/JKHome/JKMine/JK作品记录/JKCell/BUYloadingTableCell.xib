@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nsQ-6a-05c" customClass="BUYloadingTableCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="216" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nsQ-6a-05c" id="KfQ-bb-nOy">
+                <rect key="frame" x="0.0" y="0.0" width="216" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhB-KU-49g">
+                        <rect key="frame" x="19.000000000000004" y="35.666666666666664" width="35.333333333333343" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layoutDelete_yOutu" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-Db-7r5">
+                        <rect key="frame" x="187" y="39.666666666666657" width="12" height="9"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mX7-Db-7r5" secondAttribute="trailing" constant="17.01" id="mqA-ma-9Pf"/>
+                    <constraint firstItem="zhB-KU-49g" firstAttribute="centerY" secondItem="KfQ-bb-nOy" secondAttribute="centerY" id="OfO-Dz-MYL"/>
+                    <constraint firstItem="mX7-Db-7r5" firstAttribute="centerY" secondItem="zhB-KU-49g" secondAttribute="centerY" id="ogP-LN-5ym"/>
+                    <constraint firstItem="zhB-KU-49g" firstAttribute="leading" secondItem="KfQ-bb-nOy" secondAttribute="leading" constant="18.98" id="u2p-yl-93q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="8c7-nB-Auv"/>
+            <connections>
+                <outlet property="icon" destination="mX7-Db-7r5" id="SAH-Ij-sBQ"/>
+                <outlet property="label" destination="zhB-KU-49g" id="VzT-Cp-p5j"/>
+            </connections>
+            <point key="canvasLocation" x="94.656488549618317" y="-12.67605633802817"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="layoutDelete_yOutu" width="12" height="9"/>
+    </resources>
+</document>

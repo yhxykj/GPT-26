@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="XQKOtherCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="360"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="360"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drawingCanvas" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-Yf-1vd">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="360"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kj-ix-dq4">
+                        <rect key="frame" x="14" y="14" width="80" height="20"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IAQ-wv-I8U">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尺寸：9x16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u6-Wu-wHw">
+                                <rect key="frame" x="8" y="2.6666666666666679" width="64" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.1137254902" green="0.1176470588" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="IAQ-wv-I8U" firstAttribute="top" secondItem="0kj-ix-dq4" secondAttribute="top" id="MLM-ai-E6j"/>
+                            <constraint firstAttribute="height" constant="20.01" id="zqT-SU-ZiU"/>
+                            <constraint firstItem="0u6-Wu-wHw" firstAttribute="centerX" secondItem="0kj-ix-dq4" secondAttribute="centerX" id="mpG-f2-Z8f"/>
+                            <constraint firstItem="0u6-Wu-wHw" firstAttribute="centerY" secondItem="0kj-ix-dq4" secondAttribute="centerY" id="jfh-wq-Qad"/>
+                            <constraint firstItem="IAQ-wv-I8U" firstAttribute="leading" secondItem="0kj-ix-dq4" secondAttribute="leading" id="saH-Fq-XSm"/>
+                            <constraint firstAttribute="bottom" secondItem="IAQ-wv-I8U" secondAttribute="bottom" id="DRl-F8-i19"/>
+                            <constraint firstAttribute="width" constant="79.98" id="nCF-4S-QTA"/>
+                            <constraint firstAttribute="trailing" secondItem="IAQ-wv-I8U" secondAttribute="trailing" id="HC5-4o-XQu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yXv-Yf-1vd" secondAttribute="bottom" id="P8Y-4q-WAV"/>
+                <constraint firstItem="yXv-Yf-1vd" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="3OR-3f-rD1"/>
+                <constraint firstAttribute="trailing" secondItem="yXv-Yf-1vd" secondAttribute="trailing" id="Om8-XC-hgJ"/>
+                <constraint firstItem="0kj-ix-dq4" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" constant="14.01" id="QBo-NA-nOO"/>
+                <constraint firstItem="0kj-ix-dq4" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" constant="13.98" id="jSf-h7-FYW"/>
+                <constraint firstItem="yXv-Yf-1vd" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="zi5-Dv-QXe"/>
+            </constraints>
+            <size key="customSize" width="227" height="320"/>
+            <connections>
+                <outlet property="picImage" destination="yXv-Yf-1vd" id="sTk-K3-Hy0"/>
+                <outlet property="sizelabel" destination="0u6-Wu-wHw" id="LI7-sB-bkE"/>
+            </connections>
+            <point key="canvasLocation" x="264.8854961832061" y="82.394366197183103"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="drawingCanvas" width="168" height="227"/>
+    </resources>
+</document>

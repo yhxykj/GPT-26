@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="PRXYuyinCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="212" height="261"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="212" height="261"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y75-7H-lXn">
+                        <rect key="frame" x="0.0" y="0.0" width="212" height="221"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Est-Pb-npq">
+                        <rect key="frame" x="0.0" y="221" width="212" height="40"/>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39.98" id="VUL-Jd-sEI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a6-80-wuM">
+                        <rect key="frame" x="13" y="229" width="33" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23.01" id="3Zh-XI-v5R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contentAudio" translatesAutoresizingMaskIntoConstraints="NO" id="j1D-g2-bTv">
+                        <rect key="frame" x="142" y="229" width="61" height="23"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="j1D-g2-bTv" secondAttribute="trailing" constant="8.96" id="x6w-eq-u8i"/>
+                <constraint firstAttribute="bottom" secondItem="Est-Pb-npq" secondAttribute="bottom" id="yna-1n-kjC"/>
+                <constraint firstItem="y75-7H-lXn" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="Xaq-Rq-MiM"/>
+                <constraint firstAttribute="trailing" secondItem="y75-7H-lXn" secondAttribute="trailing" id="HMt-BN-tvs"/>
+                <constraint firstItem="y75-7H-lXn" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="zfQ-Vu-k5R"/>
+                <constraint firstAttribute="bottom" secondItem="0a6-80-wuM" secondAttribute="bottom" constant="8.99" id="AQP-r6-XTK"/>
+                <constraint firstItem="0a6-80-wuM" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" constant="12.99" id="sdU-ZC-t9s"/>
+                <constraint firstItem="Est-Pb-npq" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="3UD-Ld-CxH"/>
+                <constraint firstAttribute="bottom" secondItem="y75-7H-lXn" secondAttribute="bottom" constant="39.99" id="UTJ-pZ-HnU"/>
+                <constraint firstAttribute="trailing" secondItem="Est-Pb-npq" secondAttribute="trailing" id="brd-Mm-EmU"/>
+                <constraint firstAttribute="bottom" secondItem="j1D-g2-bTv" secondAttribute="bottom" constant="9.02" id="Mqx-t9-yxS"/>
+            </constraints>
+            <size key="customSize" width="212" height="350"/>
+            <connections>
+                <outlet property="labelImage" destination="j1D-g2-bTv" id="I36-Xh-RV7"/>
+                <outlet property="picImage" destination="y75-7H-lXn" id="ScF-kX-R3Z"/>
+                <outlet property="stylelabel" destination="0a6-80-wuM" id="PW9-jB-Ch9"/>
+            </connections>
+            <point key="canvasLocation" x="9.1603053435114496" y="10.91549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="contentAudio" width="61" height="23"/>
+    </resources>
+</document>

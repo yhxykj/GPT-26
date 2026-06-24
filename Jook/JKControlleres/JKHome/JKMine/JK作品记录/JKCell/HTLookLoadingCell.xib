@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="HTLookLoadingCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drawingCanvas" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-nT-6sd">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="260"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCf-0e-jlJ">
+                        <rect key="frame" x="148" y="0.0" width="47" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47.03" id="meY-By-a0Y"/>
+                            <constraint firstAttribute="width" constant="47.01" id="tF3-hK-mnI"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="voiceRepair"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ve-IU-mYI">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="260"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在生成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etx-P7-BEW">
+                                <rect key="frame" x="65" y="187.66666666666666" width="65.333333333333314" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconGundongItem.gif" translatesAutoresizingMaskIntoConstraints="NO" id="mNN-dJ-lDJ" customClass="YYAnimatedImageView">
+                                <rect key="frame" x="76.666666666666671" y="111.66666666666669" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41.98" id="eR7-i2-Cqw"/>
+                                    <constraint firstAttribute="height" constant="41.98" id="905-at-RHg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mNN-dJ-lDJ" firstAttribute="centerX" secondItem="5ve-IU-mYI" secondAttribute="centerX" id="vL8-Sv-nno"/>
+                            <constraint firstItem="Etx-P7-BEW" firstAttribute="top" secondItem="mNN-dJ-lDJ" secondAttribute="bottom" constant="33.97" id="Ei4-Hw-wzd"/>
+                            <constraint firstItem="Etx-P7-BEW" firstAttribute="centerX" secondItem="5ve-IU-mYI" secondAttribute="centerX" id="z2K-ug-RHI"/>
+                            <constraint firstAttribute="bottom" secondItem="Etx-P7-BEW" secondAttribute="bottom" constant="53.02" id="1l7-oJ-JwC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KjR-nT-6sd" secondAttribute="bottom" id="lFf-h2-zgo"/>
+                <constraint firstAttribute="trailing" secondItem="KjR-nT-6sd" secondAttribute="trailing" id="pyP-rQ-bIV"/>
+                <constraint firstItem="KjR-nT-6sd" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="asN-fQ-iUu"/>
+                <constraint firstItem="KjR-nT-6sd" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="SlS-7q-LcZ"/>
+                <constraint firstItem="5ve-IU-mYI" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="fKj-41-zGI"/>
+                <constraint firstItem="5ve-IU-mYI" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="D6i-rE-BH2"/>
+                <constraint firstItem="WCf-0e-jlJ" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="6rJ-3f-8hS"/>
+                <constraint firstAttribute="trailing" secondItem="5ve-IU-mYI" secondAttribute="trailing" id="15T-AU-Wuc"/>
+                <constraint firstAttribute="bottom" secondItem="5ve-IU-mYI" secondAttribute="bottom" id="H59-2p-DJB"/>
+                <constraint firstAttribute="trailing" secondItem="WCf-0e-jlJ" secondAttribute="trailing" id="XCM-EV-v0K"/>
+            </constraints>
+            <size key="customSize" width="195" height="260"/>
+            <connections>
+                <outlet property="bgImage" destination="KjR-nT-6sd" id="d1w-V7-1qf"/>
+                <outlet property="button" destination="WCf-0e-jlJ" id="gnc-tB-MA5"/>
+                <outlet property="loadImage" destination="mNN-dJ-lDJ" id="eEw-Rz-XEy"/>
+                <outlet property="loadiView" destination="5ve-IU-mYI" id="5d4-Sr-wzq"/>
+            </connections>
+            <point key="canvasLocation" x="240.45801526717557" y="61.267605633802823"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconGundongItem.gif" width="230" height="230"/>
+        <image name="drawingCanvas" width="168" height="227"/>
+        <image name="voiceRepair" width="25" height="25"/>
+    </resources>
+</document>
