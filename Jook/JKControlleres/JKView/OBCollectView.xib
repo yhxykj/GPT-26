@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XHB-kL-NtS" customClass="OBCollectView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQJ-Xa-gcR">
+                    <rect key="frame" x="0.0" y="336" width="393" height="180"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settingLayoutJjzy" translatesAutoresizingMaskIntoConstraints="NO" id="SBy-dB-Cbo">
+                            <rect key="frame" x="161.66666666666666" y="10" width="70" height="71"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片生成中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnZ-PK-s47">
+                            <rect key="frame" x="146" y="111" width="101" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23.99" id="VaP-cO-XKN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（返回不会中断生成，可在我的作品查看）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-ep-eXj">
+                            <rect key="frame" x="60.666666666666657" y="143" width="272" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gnz-ep-eXj" firstAttribute="top" secondItem="JnZ-PK-s47" secondAttribute="bottom" constant="7.99" id="5qZ-PS-gmL"/>
+                        <constraint firstAttribute="height" constant="179.97" id="ILF-Fg-8B0"/>
+                        <constraint firstItem="gnz-ep-eXj" firstAttribute="centerX" secondItem="VQJ-Xa-gcR" secondAttribute="centerX" id="rST-5p-4im"/>
+                        <constraint firstItem="JnZ-PK-s47" firstAttribute="centerX" secondItem="VQJ-Xa-gcR" secondAttribute="centerX" id="QCi-Pe-L4a"/>
+                        <constraint firstItem="SBy-dB-Cbo" firstAttribute="top" secondItem="VQJ-Xa-gcR" secondAttribute="top" constant="9.99" id="Wde-at-vTl"/>
+                        <constraint firstAttribute="bottom" secondItem="gnz-ep-eXj" secondAttribute="bottom" constant="20.01" id="17G-2m-qxw"/>
+                        <constraint firstItem="SBy-dB-Cbo" firstAttribute="centerX" secondItem="VQJ-Xa-gcR" secondAttribute="centerX" id="VW1-bY-wu0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rnk-ml-IwL"/>
+            <constraints>
+                <constraint firstItem="rnk-ml-IwL" firstAttribute="trailing" secondItem="VQJ-Xa-gcR" secondAttribute="trailing" id="Tc3-v4-1qT"/>
+                <constraint firstItem="VQJ-Xa-gcR" firstAttribute="leading" secondItem="rnk-ml-IwL" secondAttribute="leading" id="fYg-RG-yn4"/>
+                <constraint firstItem="VQJ-Xa-gcR" firstAttribute="centerY" secondItem="XHB-kL-NtS" secondAttribute="centerY" id="Co3-03-kSI"/>
+            </constraints>
+            <connections>
+                <outlet property="descLabel" destination="gnz-ep-eXj" id="ej6-aU-mYr"/>
+                <outlet property="loadImageview" destination="SBy-dB-Cbo" id="NiU-kk-Kx0"/>
+                <outlet property="titleLabel" destination="JnZ-PK-s47" id="sJG-Z0-jW9"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="settingLayoutJjzy" width="70" height="71"/>
+    </resources>
+</document>

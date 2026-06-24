@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XHB-kL-NtS" customClass="DLaunchLaunchView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tWH-Lr-lYF">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBX-i7-lNI">
+                    <rect key="frame" x="27.666666666666657" y="190" width="338" height="388"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downloadBasicSocket" translatesAutoresizingMaskIntoConstraints="NO" id="Bzh-oc-RGN">
+                            <rect key="frame" x="0.0" y="0.0" width="338" height="388"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtu-3R-L10">
+                            <rect key="frame" x="19" y="45" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32.03" id="m9t-Sq-q5o"/>
+                                <constraint firstAttribute="width" constant="32.01" id="eer-tw-vfJ"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="collectionPoint"/>
+                            <connections>
+                                <action selector="closeAction:" destination="XHB-kL-NtS" eventType="touchUpInside" id="KSL-Ut-npC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfy-Y7-qGy">
+                            <rect key="frame" x="56" y="273" width="225" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52.98" id="7K7-SU-3MG"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="buttonAction:" destination="XHB-kL-NtS" eventType="touchUpInside" id="beF-kn-o7W"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Bzh-oc-RGN" firstAttribute="top" secondItem="DBX-i7-lNI" secondAttribute="top" id="jv6-sm-4zn"/>
+                        <constraint firstAttribute="bottom" secondItem="Bzh-oc-RGN" secondAttribute="bottom" id="cvJ-cB-ZM9"/>
+                        <constraint firstItem="Xtu-3R-L10" firstAttribute="leading" secondItem="DBX-i7-lNI" secondAttribute="leading" constant="19.01" id="9Z0-WP-0BY"/>
+                        <constraint firstAttribute="bottom" secondItem="yfy-Y7-qGy" secondAttribute="bottom" constant="62.04" id="WUS-wf-eIy"/>
+                        <constraint firstAttribute="width" constant="337.96" id="y5n-ep-akl"/>
+                        <constraint firstItem="Xtu-3R-L10" firstAttribute="top" secondItem="DBX-i7-lNI" secondAttribute="top" constant="44.98" id="8JH-rw-Ard"/>
+                        <constraint firstAttribute="height" constant="387.99" id="HBc-CV-vOZ"/>
+                        <constraint firstItem="yfy-Y7-qGy" firstAttribute="leading" secondItem="DBX-i7-lNI" secondAttribute="leading" constant="55.98" id="mQv-7d-6iJ"/>
+                        <constraint firstAttribute="trailing" secondItem="yfy-Y7-qGy" secondAttribute="trailing" constant="56.99" id="Nem-2R-h6K"/>
+                        <constraint firstItem="Bzh-oc-RGN" firstAttribute="leading" secondItem="DBX-i7-lNI" secondAttribute="leading" id="yOt-gm-qBO"/>
+                        <constraint firstAttribute="trailing" secondItem="Bzh-oc-RGN" secondAttribute="trailing" id="6rA-7K-NpG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rnk-ml-IwL"/>
+            <constraints>
+                <constraint firstItem="tWH-Lr-lYF" firstAttribute="leading" secondItem="rnk-ml-IwL" secondAttribute="leading" id="3Qt-qt-yhy"/>
+                <constraint firstItem="tWH-Lr-lYF" firstAttribute="top" secondItem="XHB-kL-NtS" secondAttribute="top" id="Oe7-Q3-DAy"/>
+                <constraint firstItem="DBX-i7-lNI" firstAttribute="centerX" secondItem="XHB-kL-NtS" secondAttribute="centerX" id="XHT-vQ-tbn"/>
+                <constraint firstAttribute="bottom" secondItem="tWH-Lr-lYF" secondAttribute="bottom" id="2rd-Cm-R34"/>
+                <constraint firstItem="rnk-ml-IwL" firstAttribute="trailing" secondItem="tWH-Lr-lYF" secondAttribute="trailing" id="1Zi-tr-RfZ"/>
+                <constraint firstItem="DBX-i7-lNI" firstAttribute="top" secondItem="XHB-kL-NtS" secondAttribute="top" constant="189.98" id="mDb-k6-Cr7"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="collectionPoint" width="32" height="32"/>
+        <image name="downloadBasicSocket" width="338" height="388"/>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XHB-kL-NtS" customClass="CQTWaterUploadView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gQp-B6-L9I">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="pOV-3R-J2m" appends="YES" id="MY2-Ja-4XU"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Itz-X5-h25">
+                    <rect key="frame" x="32" y="137" width="326" height="530"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="会员_卡片" translatesAutoresizingMaskIntoConstraints="NO" id="9wa-Z9-23G">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="390"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="390.01" id="zSc-XK-W3A"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZO8-FL-7ZW">
+                            <rect key="frame" x="65" y="406" width="196" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="59.02" id="op1-UD-eW4"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="会员_立即开通"/>
+                            <connections>
+                                <action selector="upgrades:" destination="XHB-kL-NtS" eventType="touchUpInside" id="Qmc-rr-vD7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2z-Ez-1JV">
+                            <rect key="frame" x="141" y="481" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="43.97" id="3IF-Ij-Ylu"/>
+                                <constraint firstAttribute="height" constant="44.02" id="T0x-cg-sFS"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="openRecords"/>
+                            <connections>
+                                <action selector="close:" destination="XHB-kL-NtS" eventType="touchUpInside" id="CcK-EY-E5L"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZO8-FL-7ZW" firstAttribute="top" secondItem="9wa-Z9-23G" secondAttribute="bottom" constant="16.02" id="zjL-rk-WES"/>
+                        <constraint firstAttribute="height" constant="529.95" id="942-sa-63f"/>
+                        <constraint firstItem="9wa-Z9-23G" firstAttribute="top" secondItem="Itz-X5-h25" secondAttribute="top" id="4Jl-Ea-Zxm"/>
+                        <constraint firstAttribute="trailing" secondItem="9wa-Z9-23G" secondAttribute="trailing" id="VQM-r6-sWf"/>
+                        <constraint firstItem="ZO8-FL-7ZW" firstAttribute="centerX" secondItem="Itz-X5-h25" secondAttribute="centerX" id="CvN-eI-1Ei"/>
+                        <constraint firstItem="r2z-Ez-1JV" firstAttribute="centerX" secondItem="Itz-X5-h25" secondAttribute="centerX" id="Dm8-pD-6Qg"/>
+                        <constraint firstItem="9wa-Z9-23G" firstAttribute="centerX" secondItem="Itz-X5-h25" secondAttribute="centerX" id="QjW-Bl-veX"/>
+                        <constraint firstAttribute="width" constant="326.02" id="quy-5N-vIu"/>
+                        <constraint firstAttribute="bottom" secondItem="r2z-Ez-1JV" secondAttribute="bottom" constant="5.02" id="hF0-Me-CZo"/>
+                        <constraint firstItem="9wa-Z9-23G" firstAttribute="leading" secondItem="Itz-X5-h25" secondAttribute="leading" id="9mB-BY-jRj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rnk-ml-IwL"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gQp-B6-L9I" secondAttribute="trailing" id="DsX-Mg-Qqf"/>
+                <constraint firstItem="gQp-B6-L9I" firstAttribute="leading" secondItem="XHB-kL-NtS" secondAttribute="leading" id="cOe-5I-vAR"/>
+                <constraint firstItem="Itz-X5-h25" firstAttribute="centerX" secondItem="XHB-kL-NtS" secondAttribute="centerX" id="erz-9S-Ad1"/>
+                <constraint firstItem="Itz-X5-h25" firstAttribute="centerY" secondItem="XHB-kL-NtS" secondAttribute="centerY" constant="-20" id="cKX-oi-59y"/>
+                <constraint firstAttribute="bottom" secondItem="gQp-B6-L9I" secondAttribute="bottom" id="eUI-Lp-ycz"/>
+                <constraint firstItem="gQp-B6-L9I" firstAttribute="top" secondItem="XHB-kL-NtS" secondAttribute="top" id="bfe-w2-5nQ"/>
+            </constraints>
+            <point key="canvasLocation" x="121.53846153846153" y="-11.374407582938389"/>
+        </view>
+        <tapGestureRecognizer id="pOV-3R-J2m">
+            <connections>
+                <action selector="ewrqwer:" destination="XHB-kL-NtS" id="vnT-eN-xIM"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="会员_卡片" width="326" height="390"/>
+        <image name="openRecords" width="28" height="28"/>
+        <image name="会员_立即开通" width="196" height="62"/>
+    </resources>
+</document>
