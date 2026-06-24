@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner" customClass="JUserController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="HEk-pd-Fjw" id="omo-Ng-sBp"/>
+                <outlet property="picImage" destination="5mJ-FI-7DR" id="1VO-jw-nOI"/>
+                <outlet property="savebutton" destination="2bW-QS-t9D" id="9fc-Lo-3EX"/>
+                <outlet property="view" destination="1zg-8q-hzX" id="sKI-pZ-EaH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1zg-8q-hzX">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9L-32-deu">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGB-Td-ntL">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.97" id="ywV-39-zfz"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="pointCopy_udPause"/>
+                            <connections>
+                                <action selector="backAction:" destination="ha1-h7-7fH" eventType="touchUpInside" id="gy2-gE-OI4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bW-QS-t9D">
+                            <rect key="frame" x="308" y="0.0" width="75" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="74.99" id="Nm1-Ik-Ev2"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="chatOllection"/>
+                            <connections>
+                                <action selector="saveAction:" destination="ha1-h7-7fH" eventType="touchUpInside" id="1Uh-YE-2KZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2bW-QS-t9D" firstAttribute="top" secondItem="m9L-32-deu" secondAttribute="top" id="FuE-tR-Hsu"/>
+                        <constraint firstAttribute="trailing" secondItem="2bW-QS-t9D" secondAttribute="trailing" constant="10.02" id="eb6-wA-HKY"/>
+                        <constraint firstItem="qGB-Td-ntL" firstAttribute="top" secondItem="m9L-32-deu" secondAttribute="top" id="d8H-oJ-NVn"/>
+                        <constraint firstAttribute="height" constant="43.98" id="1lt-ft-sD0"/>
+                        <constraint firstAttribute="bottom" secondItem="qGB-Td-ntL" secondAttribute="bottom" id="Jda-wD-CrR"/>
+                        <constraint firstAttribute="bottom" secondItem="2bW-QS-t9D" secondAttribute="bottom" id="FWj-Qi-R4G"/>
+                        <constraint firstItem="qGB-Td-ntL" firstAttribute="leading" secondItem="m9L-32-deu" secondAttribute="leading" id="oL1-vP-tP7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEk-pd-Fjw">
+                    <rect key="frame" x="15" y="114" width="363" height="467"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5mJ-FI-7DR">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="467"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5mJ-FI-7DR" secondAttribute="bottom" id="qgu-4T-Dcr"/>
+                        <constraint firstAttribute="height" constant="467.03" id="yxk-Nc-z5f"/>
+                        <constraint firstItem="5mJ-FI-7DR" firstAttribute="leading" secondItem="HEk-pd-Fjw" secondAttribute="leading" id="dEF-yf-39A"/>
+                        <constraint firstAttribute="trailing" secondItem="5mJ-FI-7DR" secondAttribute="trailing" id="2lw-7Y-9AA"/>
+                        <constraint firstItem="5mJ-FI-7DR" firstAttribute="top" secondItem="HEk-pd-Fjw" secondAttribute="top" id="lD2-HC-TV8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="O10-tE-IS9"/>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.058823529411764705" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m9L-32-deu" secondAttribute="trailing" id="cw4-dO-P4T"/>
+                <constraint firstItem="HEk-pd-Fjw" firstAttribute="top" secondItem="m9L-32-deu" secondAttribute="bottom" constant="10.98" id="xZF-rJ-Lh6"/>
+                <constraint firstItem="m9L-32-deu" firstAttribute="top" secondItem="O10-tE-IS9" secondAttribute="top" id="WB8-Un-1Gq"/>
+                <constraint firstItem="HEk-pd-Fjw" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" constant="14.98" id="WF6-0Y-rJt"/>
+                <constraint firstItem="O10-tE-IS9" firstAttribute="trailing" secondItem="HEk-pd-Fjw" secondAttribute="trailing" constant="15.01" id="AW7-Uk-Ai0"/>
+                <constraint firstItem="m9L-32-deu" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" id="Rge-ev-HKH"/>
+            </constraints>
+            <point key="canvasLocation" x="178" y="-42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chatOllection" width="66" height="30"/>
+        <image name="pointCopy_udPause" width="10" height="18"/>
+    </resources>
+</document>

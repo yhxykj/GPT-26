@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner" customClass="KMCardController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="1zg-8q-hzX" id="sKI-pZ-EaH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1zg-8q-hzX">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waterShare" translatesAutoresizingMaskIntoConstraints="NO" id="aM5-qi-JC3">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9U-nx-3qF">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="selectChoose"/>
+                    <connections>
+                        <action selector="_nextClick" destination="ha1-h7-7fH" eventType="touchUpInside" id="p6y-Y1-GUH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWP-Fx-zn4">
+                    <rect key="frame" x="10" y="59" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55.01" id="HvZ-wG-Ota"/>
+                        <constraint firstAttribute="height" constant="43.98" id="yi7-UR-1z8"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="pointCopy_udPause"/>
+                    <connections>
+                        <action selector="_dissmiss:" destination="ha1-h7-7fH" eventType="touchUpInside" id="s4T-vE-Rhn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="O10-tE-IS9"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oWP-Fx-zn4" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" constant="9.99" id="jKR-6l-Pmm"/>
+                <constraint firstItem="O10-tE-IS9" firstAttribute="trailing" secondItem="v9U-nx-3qF" secondAttribute="trailing" constant="45.98" id="xU9-wl-H3o"/>
+                <constraint firstItem="oWP-Fx-zn4" firstAttribute="top" secondItem="O10-tE-IS9" secondAttribute="top" id="lMR-lY-ZJ2"/>
+                <constraint firstItem="O10-tE-IS9" firstAttribute="trailing" secondItem="aM5-qi-JC3" secondAttribute="trailing" id="jL4-A0-6V5"/>
+                <constraint firstAttribute="bottom" secondItem="aM5-qi-JC3" secondAttribute="bottom" id="f6M-Nk-y7m"/>
+                <constraint firstItem="aM5-qi-JC3" firstAttribute="top" secondItem="1zg-8q-hzX" secondAttribute="top" id="VuW-e0-vlL"/>
+                <constraint firstItem="v9U-nx-3qF" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" constant="45.98" id="F5D-22-U04"/>
+                <constraint firstItem="aM5-qi-JC3" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" id="vsR-Wv-jzc"/>
+                <constraint firstItem="O10-tE-IS9" firstAttribute="bottom" secondItem="v9U-nx-3qF" secondAttribute="bottom" constant="19.98" id="J45-Co-DQe"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pointCopy_udPause" width="10" height="18"/>
+        <image name="waterShare" width="390" height="844"/>
+        <image name="selectChoose" width="298" height="54"/>
+    </resources>
+</document>

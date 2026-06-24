@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="DGPPageCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_select" translatesAutoresizingMaskIntoConstraints="NO" id="VqV-cX-hFl">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sp9-Cf-kck">
+                        <rect key="frame" x="4" y="4" width="105" height="95"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <constraints>
+                <constraint firstItem="sp9-Cf-kck" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" constant="4.01" id="jxj-sA-O4V"/>
+                <constraint firstItem="sp9-Cf-kck" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" constant="4.02" id="kPL-5A-Vav"/>
+                <constraint firstAttribute="bottom" secondItem="sp9-Cf-kck" secondAttribute="bottom" constant="4.01" id="H4v-iE-yGO"/>
+                <constraint firstAttribute="trailing" secondItem="VqV-cX-hFl" secondAttribute="trailing" id="gaD-bx-kyJ"/>
+                <constraint firstAttribute="bottom" secondItem="VqV-cX-hFl" secondAttribute="bottom" id="ezC-Fs-3xR"/>
+                <constraint firstAttribute="trailing" secondItem="sp9-Cf-kck" secondAttribute="trailing" constant="4.02" id="aHN-M0-jRk"/>
+                <constraint firstItem="VqV-cX-hFl" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="YL9-gV-OJd"/>
+                <constraint firstItem="VqV-cX-hFl" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="C73-oM-JEp"/>
+            </constraints>
+            <size key="customSize" width="113" height="103"/>
+            <connections>
+                <outlet property="Icon" destination="sp9-Cf-kck" id="vYz-Me-1XA"/>
+                <outlet property="bgImage" destination="VqV-cX-hFl" id="2F7-Or-uhI"/>
+            </connections>
+            <point key="canvasLocation" x="179.23076923076923" y="6.7535545023696679"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cell_select" width="60" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="XRClassAymentCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="169"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="slA-QI-1bs">
+                        <rect key="frame" x="0.0" y="0.0" width="161" height="169"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <constraints>
+                <constraint firstItem="slA-QI-1bs" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="ODf-DB-MEe"/>
+                <constraint firstAttribute="trailing" secondItem="slA-QI-1bs" secondAttribute="trailing" id="5PX-sN-5g1"/>
+                <constraint firstItem="slA-QI-1bs" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="b89-Wj-Mu9"/>
+                <constraint firstAttribute="bottom" secondItem="slA-QI-1bs" secondAttribute="bottom" id="BjX-v4-d6y"/>
+            </constraints>
+            <size key="customSize" width="161" height="169"/>
+            <connections>
+                <outlet property="avatar" destination="slA-QI-1bs" id="QcS-6G-USC"/>
+            </connections>
+            <point key="canvasLocation" x="214.50381679389312" y="29.225352112676056"/>
+        </collectionViewCell>
+    </objects>
+</document>

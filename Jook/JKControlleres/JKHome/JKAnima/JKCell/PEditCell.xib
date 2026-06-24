@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="PEditCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="304"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="304"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="往事流转在你的眼眸#国风#清冷感#大坨云" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO3-zr-q3O">
+                        <rect key="frame" x="0.0" y="260" width="215" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35.96" id="sLB-VN-x7n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPB-sv-Xxj">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="253"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2KN-yU-CzO">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="253"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQU-7u-Z9K">
+                        <rect key="frame" x="175" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40.02" id="7m3-vl-gNi"/>
+                            <constraint firstAttribute="height" constant="39.99" id="eP9-fL-5yr"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="imageCollection"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uQU-7u-Z9K" secondAttribute="trailing" id="HRx-hC-3kQ"/>
+                <constraint firstAttribute="bottom" secondItem="MO3-zr-q3O" secondAttribute="bottom" constant="7.98" id="kOY-jH-B79"/>
+                <constraint firstAttribute="trailing" secondItem="jPB-sv-Xxj" secondAttribute="trailing" id="qAw-7u-v0f"/>
+                <constraint firstItem="2KN-yU-CzO" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="NTS-lb-hso"/>
+                <constraint firstItem="jPB-sv-Xxj" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="v4Z-Zl-w3N"/>
+                <constraint firstItem="uQU-7u-Z9K" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="dMc-TO-tqC"/>
+                <constraint firstItem="MO3-zr-q3O" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="tEg-N3-E7A"/>
+                <constraint firstItem="2KN-yU-CzO" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="797-qs-Acu"/>
+                <constraint firstItem="MO3-zr-q3O" firstAttribute="top" secondItem="2KN-yU-CzO" secondAttribute="bottom" constant="7.01" id="Zx5-Gz-5Ri"/>
+                <constraint firstAttribute="trailing" secondItem="2KN-yU-CzO" secondAttribute="trailing" id="CeO-NM-Q7m"/>
+                <constraint firstAttribute="bottom" secondItem="jPB-sv-Xxj" secondAttribute="bottom" constant="51.05" id="3YC-vf-6kh"/>
+                <constraint firstItem="jPB-sv-Xxj" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="wWR-8Q-3yG"/>
+                <constraint firstAttribute="trailing" secondItem="MO3-zr-q3O" secondAttribute="trailing" id="6Yv-Xe-qwM"/>
+            </constraints>
+            <size key="customSize" width="215" height="304"/>
+            <connections>
+                <outlet property="bgImage" destination="2KN-yU-CzO" id="6vl-f2-WGn"/>
+                <outlet property="bgView" destination="jPB-sv-Xxj" id="tCo-F6-6Zs"/>
+                <outlet property="descLabel" destination="MO3-zr-q3O" id="NWD-Sn-qfw"/>
+            </connections>
+            <point key="canvasLocation" x="257.25190839694653" y="78.16901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="imageCollection" width="18" height="18"/>
+    </resources>
+</document>

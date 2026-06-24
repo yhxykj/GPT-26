@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nsQ-6a-05c" customClass="NCKSettingCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nsQ-6a-05c" id="KfQ-bb-nOy">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-l1-mQ1">
+                        <rect key="frame" x="27.000000000000004" y="18.666666666666668" width="37.333333333333343" height="18.000000000000004"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bufferPlayTopleft" translatesAutoresizingMaskIntoConstraints="NO" id="IQM-5r-C4k">
+                        <rect key="frame" x="296" y="21.666666666666668" width="8" height="12.000000000000004"/>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questiongUploadDefault_s" translatesAutoresizingMaskIntoConstraints="NO" id="14M-sZ-XBf">
+                        <rect key="frame" x="21" y="18" width="17" height="19"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="14M-sZ-XBf" firstAttribute="centerY" secondItem="KfQ-bb-nOy" secondAttribute="centerY" id="uqH-Ai-e7p"/>
+                    <constraint firstAttribute="trailing" secondItem="IQM-5r-C4k" secondAttribute="trailing" constant="15.99" id="xsq-pL-xfU"/>
+                    <constraint firstItem="IQM-5r-C4k" firstAttribute="centerY" secondItem="KfQ-bb-nOy" secondAttribute="centerY" id="TNv-T6-YMm"/>
+                    <constraint firstItem="BSM-l1-mQ1" firstAttribute="leading" secondItem="KfQ-bb-nOy" secondAttribute="leading" constant="26.96" id="AAa-uD-K2o"/>
+                    <constraint firstItem="14M-sZ-XBf" firstAttribute="leading" secondItem="KfQ-bb-nOy" secondAttribute="leading" constant="21.01" id="bsD-LD-gkN"/>
+                    <constraint firstItem="BSM-l1-mQ1" firstAttribute="centerY" secondItem="KfQ-bb-nOy" secondAttribute="centerY" id="LuZ-Eo-tMI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="8c7-nB-Auv"/>
+            <connections>
+                <outlet property="icon" destination="14M-sZ-XBf" id="1Vs-S9-CZk"/>
+                <outlet property="label" destination="BSM-l1-mQ1" id="u1O-4Y-Uyl"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bufferPlayTopleft" width="8" height="12"/>
+        <image name="questiongUploadDefault_s" width="17" height="19"/>
+    </resources>
+</document>

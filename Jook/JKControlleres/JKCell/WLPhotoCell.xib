@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nsQ-6a-05c" customClass="WLPhotoCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nsQ-6a-05c" id="KfQ-bb-nOy">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtM-nA-IGS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storeAvatarMaterial" translatesAutoresizingMaskIntoConstraints="NO" id="BPn-jG-iGN">
+                                <rect key="frame" x="16" y="6" width="358" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62.98" id="FQ5-c2-1iX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_jcPlay" translatesAutoresizingMaskIntoConstraints="NO" id="na9-ON-5GL">
+                                <rect key="frame" x="33" y="26.666666666666671" width="22" height="22"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9S-SV-1UV">
+                                <rect key="frame" x="63" y="28" width="40.666666666666657" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingMoreCopy_i" translatesAutoresizingMaskIntoConstraints="NO" id="duF-W6-Wc8">
+                                <rect key="frame" x="349" y="30" width="9" height="15"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="G9S-SV-1UV" firstAttribute="centerY" secondItem="gtM-nA-IGS" secondAttribute="centerY" id="7Vq-RV-kYj"/>
+                            <constraint firstItem="BPn-jG-iGN" firstAttribute="top" secondItem="gtM-nA-IGS" secondAttribute="top" constant="6.03" id="fFg-qN-VLx"/>
+                            <constraint firstAttribute="trailing" secondItem="duF-W6-Wc8" secondAttribute="trailing" constant="32.01" id="g9E-C1-2OC"/>
+                            <constraint firstItem="G9S-SV-1UV" firstAttribute="leading" secondItem="gtM-nA-IGS" secondAttribute="leading" constant="63.03" id="SFf-tb-vDV"/>
+                            <constraint firstAttribute="trailing" secondItem="BPn-jG-iGN" secondAttribute="trailing" constant="15.97" id="Eot-KZ-per"/>
+                            <constraint firstItem="na9-ON-5GL" firstAttribute="centerY" secondItem="gtM-nA-IGS" secondAttribute="centerY" id="MsF-lX-mMc"/>
+                            <constraint firstItem="duF-W6-Wc8" firstAttribute="centerY" secondItem="gtM-nA-IGS" secondAttribute="centerY" id="oKp-Cp-nxB"/>
+                            <constraint firstItem="BPn-jG-iGN" firstAttribute="leading" secondItem="gtM-nA-IGS" secondAttribute="leading" constant="16.02" id="4Z3-K4-fHA"/>
+                            <constraint firstAttribute="bottom" secondItem="BPn-jG-iGN" secondAttribute="bottom" constant="5.98" id="jLK-qG-1nO"/>
+                            <constraint firstItem="na9-ON-5GL" firstAttribute="leading" secondItem="gtM-nA-IGS" secondAttribute="leading" constant="33.02" id="czx-1B-yff"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gtM-nA-IGS" secondAttribute="bottom" id="eRr-xu-JGp"/>
+                    <constraint firstAttribute="trailing" secondItem="gtM-nA-IGS" secondAttribute="trailing" id="xrr-tM-5CK"/>
+                    <constraint firstItem="gtM-nA-IGS" firstAttribute="top" secondItem="KfQ-bb-nOy" secondAttribute="top" id="2cp-pm-Qvo"/>
+                    <constraint firstItem="gtM-nA-IGS" firstAttribute="leading" secondItem="KfQ-bb-nOy" secondAttribute="leading" id="25t-yO-G9f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="8c7-nB-Auv"/>
+            <connections>
+                <outlet property="icon" destination="na9-ON-5GL" id="S85-hl-JUi"/>
+                <outlet property="namelabel" destination="G9S-SV-1UV" id="UQY-nb-w1Q"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="storeAvatarMaterial" width="358" height="63"/>
+        <image name="register_jcPlay" width="22" height="22"/>
+        <image name="loadingMoreCopy_i" width="9" height="15"/>
+    </resources>
+</document>

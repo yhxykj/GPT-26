@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="JJFeedbackWorkCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="251"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="251"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M06-20-2KD">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="200"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="往事流转在你的眼眸#国风#清冷感#大坨云" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjU-36-wJ0">
+                        <rect key="frame" x="0.0" y="207" width="175" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35.97" id="KWC-Bd-VEr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <constraints>
+                <constraint firstItem="M06-20-2KD" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="wtp-4P-CHI"/>
+                <constraint firstAttribute="bottom" secondItem="AjU-36-wJ0" secondAttribute="bottom" constant="7.97" id="9yh-EH-4JO"/>
+                <constraint firstItem="AjU-36-wJ0" firstAttribute="top" secondItem="M06-20-2KD" secondAttribute="bottom" constant="7.03" id="uRp-f4-7lS"/>
+                <constraint firstAttribute="trailing" secondItem="M06-20-2KD" secondAttribute="trailing" id="Ws1-dK-XzL"/>
+                <constraint firstAttribute="trailing" secondItem="AjU-36-wJ0" secondAttribute="trailing" id="e3f-bF-oGn"/>
+                <constraint firstItem="AjU-36-wJ0" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="WPU-tO-jft"/>
+                <constraint firstItem="M06-20-2KD" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="EwB-O1-qx0"/>
+            </constraints>
+            <size key="customSize" width="225" height="257"/>
+            <connections>
+                <outlet property="bgImage" destination="M06-20-2KD" id="MeK-x7-x4f"/>
+                <outlet property="desclabel" destination="AjU-36-wJ0" id="5fi-JD-MIY"/>
+            </connections>
+            <point key="canvasLocation" x="264.8854961832061" y="61.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="ZOtherMainCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="removeDoubaoTopleft" translatesAutoresizingMaskIntoConstraints="NO" id="sKo-Ud-154">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sKo-Ud-154" secondAttribute="bottom" id="ZtX-0V-YH4"/>
+                <constraint firstAttribute="trailing" secondItem="sKo-Ud-154" secondAttribute="trailing" id="Rnx-aX-yKD"/>
+                <constraint firstItem="sKo-Ud-154" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="iNs-X3-Fyq"/>
+                <constraint firstItem="sKo-Ud-154" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="45u-CR-eyO"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImage" destination="sKo-Ud-154" id="kXe-te-qvo"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="removeDoubaoTopleft" width="85" height="113"/>
+    </resources>
+</document>

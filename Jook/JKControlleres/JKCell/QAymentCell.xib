@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="nsQ-6a-05c" customClass="QAymentCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nsQ-6a-05c" id="KfQ-bb-nOy">
+                <rect key="frame" x="0.0" y="0.0" width="458" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家庭财务管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-yc-HgN">
+                        <rect key="frame" x="20" y="10" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPU-DU-reU">
+                        <rect key="frame" x="16" y="37" width="426" height="154"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在这个示例中，我们创建了一个包含三个页面的 UIScrollView，并使用 UIPageControl 显示当前页面的指示器。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkN-Ar-5wV">
+                                <rect key="frame" x="20" y="16" width="386" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf3-6D-kuq">
+                                <rect key="frame" x="371" y="110" width="55" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54.97" id="J39-46-OPq"/>
+                                    <constraint firstAttribute="height" constant="43.98" id="r4s-8k-3Ei"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="freeDeepseek"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DkN-Ar-5wV" firstAttribute="leading" secondItem="tPU-DU-reU" secondAttribute="leading" constant="19.98" id="TWk-HK-3QL"/>
+                            <constraint firstAttribute="bottom" secondItem="Yf3-6D-kuq" secondAttribute="bottom" id="hnU-pz-dCk"/>
+                            <constraint firstItem="DkN-Ar-5wV" firstAttribute="top" secondItem="tPU-DU-reU" secondAttribute="top" constant="15.99" id="ltZ-eq-0vV"/>
+                            <constraint firstAttribute="trailing" secondItem="Yf3-6D-kuq" secondAttribute="trailing" id="XUA-WP-a5D"/>
+                            <constraint firstAttribute="trailing" secondItem="DkN-Ar-5wV" secondAttribute="trailing" constant="20.02" id="9ee-in-9OC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tPU-DU-reU" secondAttribute="bottom" constant="10.02" id="kL7-y3-gjd"/>
+                    <constraint firstItem="Ubu-yc-HgN" firstAttribute="leading" secondItem="KfQ-bb-nOy" secondAttribute="leading" constant="20.02" id="uDx-w3-CWz"/>
+                    <constraint firstAttribute="trailing" secondItem="tPU-DU-reU" secondAttribute="trailing" constant="15.99" id="g6C-Hm-KP1"/>
+                    <constraint firstItem="tPU-DU-reU" firstAttribute="top" secondItem="Ubu-yc-HgN" secondAttribute="bottom" constant="10.02" id="SAP-2o-jkx"/>
+                    <constraint firstItem="tPU-DU-reU" firstAttribute="leading" secondItem="KfQ-bb-nOy" secondAttribute="leading" constant="15.99" id="8x4-JN-0xm"/>
+                    <constraint firstItem="Ubu-yc-HgN" firstAttribute="top" secondItem="KfQ-bb-nOy" secondAttribute="top" constant="9.97" id="pM2-uy-TKl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="8c7-nB-Auv"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="create_content_label" destination="DkN-Ar-5wV" id="fKm-HS-pXK"/>
+                <outlet property="create_label" destination="Ubu-yc-HgN" id="vNz-DH-AyP"/>
+                <outlet property="delete_button" destination="Yf3-6D-kuq" id="fnr-FF-9bz"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="42.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="freeDeepseek" width="14" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
