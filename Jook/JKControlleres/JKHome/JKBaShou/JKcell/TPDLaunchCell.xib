@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="TPDLaunchCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="68"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="replyEdit" translatesAutoresizingMaskIntoConstraints="NO" id="1IU-7J-kpv">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="68"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPd-YA-4Ej">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="68"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <constraints>
+                <constraint firstItem="VPd-YA-4Ej" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="cjH-QO-1qP"/>
+                <constraint firstItem="VPd-YA-4Ej" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="V0y-jS-hGw"/>
+                <constraint firstAttribute="bottom" secondItem="1IU-7J-kpv" secondAttribute="bottom" id="wG2-Zn-2hR"/>
+                <constraint firstAttribute="trailing" secondItem="VPd-YA-4Ej" secondAttribute="trailing" id="zpV-rg-0P9"/>
+                <constraint firstAttribute="bottom" secondItem="VPd-YA-4Ej" secondAttribute="bottom" id="icl-Jq-HaT"/>
+                <constraint firstAttribute="trailing" secondItem="1IU-7J-kpv" secondAttribute="trailing" id="R4m-O7-Sea"/>
+                <constraint firstItem="1IU-7J-kpv" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="LL7-QK-7XE"/>
+                <constraint firstItem="1IU-7J-kpv" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" id="zRT-xp-aeu"/>
+            </constraints>
+            <size key="customSize" width="128" height="68"/>
+            <connections>
+                <outlet property="icon" destination="1IU-7J-kpv" id="RcC-UF-7Hi"/>
+                <outlet property="titlelabel" destination="VPd-YA-4Ej" id="Cha-q0-bg4"/>
+            </connections>
+            <point key="canvasLocation" x="190.76923076923077" y="-5.6872037914691944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="replyEdit" width="68" height="29"/>
+    </resources>
+</document>

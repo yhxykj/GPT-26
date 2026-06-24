@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner" customClass="LFScreenController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="nHM-KV-RQR" id="a3o-Wf-neD"/>
+                <outlet property="view" destination="1zg-8q-hzX" id="sKI-pZ-EaH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1zg-8q-hzX">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDp-Vo-PO3">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tht-fD-x40">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.02" id="CPQ-iT-YoF"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="pointCopy_udPause"/>
+                            <connections>
+                                <action selector="backAction:" destination="ha1-h7-7fH" eventType="touchUpInside" id="cDc-9W-S8G"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创作记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARV-6j-eeY">
+                            <rect key="frame" x="162" y="11.666666666666671" width="69.333333333333314" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.035294117649999998" green="0.039215686270000001" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Tht-fD-x40" firstAttribute="top" secondItem="oDp-Vo-PO3" secondAttribute="top" id="6XO-hW-DGX"/>
+                        <constraint firstAttribute="bottom" secondItem="Tht-fD-x40" secondAttribute="bottom" id="3f2-Vy-uTq"/>
+                        <constraint firstItem="ARV-6j-eeY" firstAttribute="centerX" secondItem="oDp-Vo-PO3" secondAttribute="centerX" id="ZKo-tk-GSB"/>
+                        <constraint firstItem="Tht-fD-x40" firstAttribute="leading" secondItem="oDp-Vo-PO3" secondAttribute="leading" id="TMV-UI-LPi"/>
+                        <constraint firstItem="ARV-6j-eeY" firstAttribute="centerY" secondItem="oDp-Vo-PO3" secondAttribute="centerY" id="s5c-GN-GFc"/>
+                        <constraint firstAttribute="height" constant="44.01" id="1ZL-6q-wmB"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="ha1-h7-7fH" estimatedRowHeight="ha1-h7-7fH" sectionHeaderHeight="ha1-h7-7fH" estimatedSectionHeaderHeight="ha1-h7-7fH" sectionFooterHeight="ha1-h7-7fH" estimatedSectionFooterHeight="ha1-h7-7fH" translatesAutoresizingMaskIntoConstraints="NO" id="nHM-KV-RQR">
+                    <rect key="frame" x="0.0" y="108" width="393" height="744"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="ha1-h7-7fH" id="rp3-Hx-cLV"/>
+                        <outlet property="delegate" destination="ha1-h7-7fH" id="H76-TE-k9n"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="O10-tE-IS9"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oDp-Vo-PO3" secondAttribute="trailing" id="ECY-G8-Fx5"/>
+                <constraint firstItem="O10-tE-IS9" firstAttribute="trailing" secondItem="nHM-KV-RQR" secondAttribute="trailing" id="e1A-Tv-0Ds"/>
+                <constraint firstItem="nHM-KV-RQR" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" id="0XF-xr-GZg"/>
+                <constraint firstItem="oDp-Vo-PO3" firstAttribute="top" secondItem="O10-tE-IS9" secondAttribute="top" id="AJf-3u-OJi"/>
+                <constraint firstAttribute="bottom" secondItem="nHM-KV-RQR" secondAttribute="bottom" id="wrh-GD-P3a"/>
+                <constraint firstItem="nHM-KV-RQR" firstAttribute="top" secondItem="oDp-Vo-PO3" secondAttribute="bottom" constant="5.02" id="RCE-tj-p7n"/>
+                <constraint firstItem="oDp-Vo-PO3" firstAttribute="leading" secondItem="O10-tE-IS9" secondAttribute="leading" id="mau-R7-97o"/>
+            </constraints>
+            <point key="canvasLocation" x="114" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pointCopy_udPause" width="10" height="18"/>
+    </resources>
+</document>

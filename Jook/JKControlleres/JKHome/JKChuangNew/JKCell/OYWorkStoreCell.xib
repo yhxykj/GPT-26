@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="ha1-h7-7fH" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="ivV-yD-1lr" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Srw-Wv-jXB" customClass="OYWorkStoreCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuG-H2-L5l">
+                        <rect key="frame" x="19.999999999999996" y="69" width="40.666666666666657" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23.96" id="HLL-Qp-wXk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BUo-xU-qu2">
+                        <rect key="frame" x="18" y="14" width="34" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44.99" id="hwY-76-EtS"/>
+                            <constraint firstAttribute="width" constant="33.99" id="3oJ-gk-qKU"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJ1-aQ-DtF">
+                        <rect key="frame" x="151" y="0.0" width="46" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49.99" id="3TA-zv-sQx"/>
+                            <constraint firstAttribute="width" constant="45.98" id="al4-tA-LuV"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="gundongUploadYloading"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pBo-uD-3qd"/>
+            <color key="backgroundColor" red="0.098039215686274508" green="0.11372549019607843" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LuG-H2-L5l" secondAttribute="bottom" constant="21.98" id="6TL-xh-jb8"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LuG-H2-L5l" secondAttribute="trailing" constant="19.99" id="O4J-c2-4Z8"/>
+                <constraint firstItem="BUo-xU-qu2" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" constant="14.01" id="xPO-FT-Czi"/>
+                <constraint firstItem="LuG-H2-L5l" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" constant="19.98" id="6Wt-dH-ZI9"/>
+                <constraint firstAttribute="trailing" secondItem="WJ1-aQ-DtF" secondAttribute="trailing" id="C79-dC-6qZ"/>
+                <constraint firstItem="WJ1-aQ-DtF" firstAttribute="top" secondItem="Srw-Wv-jXB" secondAttribute="top" id="0UU-P7-ubV"/>
+                <constraint firstItem="BUo-xU-qu2" firstAttribute="leading" secondItem="Srw-Wv-jXB" secondAttribute="leading" constant="18.01" id="b4p-Ig-qAq"/>
+            </constraints>
+            <size key="customSize" width="197" height="90"/>
+            <connections>
+                <outlet property="cell_icon" destination="BUo-xU-qu2" id="p9s-PI-nwI"/>
+                <outlet property="cell_love_button" destination="WJ1-aQ-DtF" id="16j-NV-mby"/>
+                <outlet property="label" destination="LuG-H2-L5l" id="qgI-XJ-PXg"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="24"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gundongUploadYloading" width="14" height="17"/>
+    </resources>
+</document>
